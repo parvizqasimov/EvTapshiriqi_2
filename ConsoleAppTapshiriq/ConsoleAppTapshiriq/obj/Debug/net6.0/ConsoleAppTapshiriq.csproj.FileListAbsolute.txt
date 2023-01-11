@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\bin\Debug\net6.0\ConsoleAppTapshiriq.exe
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\bin\Debug\net6.0\ConsoleAppTapshiriq.deps.json
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\bin\Debug\net6.0\ConsoleAppTapshiriq.runtimeconfig.json
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\bin\Debug\net6.0\ConsoleAppTapshiriq.dll
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\bin\Debug\net6.0\ConsoleAppTapshiriq.pdb
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\obj\Debug\net6.0\ConsoleAppTapshiriq.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\obj\Debug\net6.0\ConsoleAppTapshiriq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\obj\Debug\net6.0\ConsoleAppTapshiriq.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\obj\Debug\net6.0\ConsoleAppTapshiriq.AssemblyInfo.cs
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\obj\Debug\net6.0\ConsoleAppTapshiriq.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\obj\Debug\net6.0\ConsoleAppTapshiriq.dll
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\obj\Debug\net6.0\refint\ConsoleAppTapshiriq.dll
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\obj\Debug\net6.0\ConsoleAppTapshiriq.pdb
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\obj\Debug\net6.0\ConsoleAppTapshiriq.genruntimeconfig.cache
+C:\Users\User\Desktop\1\EvTapshiriqi\ConsoleAppTapshiriq\ConsoleAppTapshiriq\obj\Debug\net6.0\ref\ConsoleAppTapshiriq.dll
