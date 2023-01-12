@@ -1,4 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.IO;
+using System.Runtime.Serialization;
 
 namespace ConsoleAppTapshiriq
 {
@@ -6,14 +8,17 @@ namespace ConsoleAppTapshiriq
     {
         static void Main(string[] args)
         {
-            //Evtapshiriq1 ();
-            // Evtapshiriq2 ();
-            //Evtapshiriq3 ();
+            //Evtapshiriq1();
+            //Evtapshiriq2();
+            //Evtapshiriq3();
             //Evtapshiriq4();
             //Evtapshiriq5();
             //Evtapshiriq6();
             //Evtapshiriq7();
-            Evtapshiriq8();
+            //Evtapshiriq8();
+            //Evtapshiriq9();
+            //Evtapshiriqi10(); 
+            //Evtapshiriq11();
 
         }
         static void Evtapshiriq1()
@@ -240,6 +245,210 @@ namespace ConsoleAppTapshiriq
             a=a%10;
             a=a+soneded;
             Console.WriteLine(a);
+
+        }
+        static void Evtapshiriq9()
+        {
+        /*
+         9 reqemli ededdin tek yerde dayananlardan bir eded duzlet: 132346389=12439  
+         */
+        Label1:
+            Console.Write("a:");
+            string inputValue = Console.ReadLine();
+            int a;
+            if (int.TryParse(inputValue, out a) != true)
+            {
+                Console.WriteLine("eded dogru deyil");
+                goto Label1;
+            }
+            if (a < 100000000 || a >= 1000000000)
+            {
+                Console.WriteLine("eded bu araliqda olmalidir [100000000-999999999]");
+                goto Label1;
+            }
+
+            int ters = 0, son;
+
+            while (a > 0)
+            {
+                son=a % 10;
+                ters = ters * 10 + son;
+                a/=10;
+            }
+
+            a = ters;
+            ters = 0;
+
+            int part1 = 0, part2 = 0, i = 1;
+
+            while (a>0)
+            {
+                son= a%10;
+                a/=10;
+
+                if(i % 2 != 0)
+                {
+                    part1 = part1 * 10 + son;
+                }
+                
+                i++;
+            }
+
+            Console.WriteLine($"Part1:{part1}");
+            
+
+        }
+        static void Evtapshiriq10()
+        {
+        /*
+         10) 9 reqemli ededdi tek yerde dayananlardan bir eded duzlet,
+        sonra cut yerde dayanlarinda bir eded duzlet,
+        sonra onlari topla  
+         */
+        Label1:
+            Console.Write("a:");
+            string inputValue = Console.ReadLine();
+            int a;
+            if (int.TryParse(inputValue, out a) != true)
+            {
+                Console.WriteLine("eded dogru deyil");
+                goto Label1;
+            }
+            if (a < 100000000 || a >= 1000000000)
+            {
+                Console.WriteLine("eded bu araliqda olmalidir [100000000-999999999]");
+                goto Label1;
+            }
+
+            int ters = 0, son;
+
+            while (a > 0)
+            {
+                son = a % 10;
+                ters = ters * 10 + son;
+                a /= 10;
+            }
+
+            a = ters;
+            ters = 0;
+
+            int part1 = 0, part2 = 0, i = 1;
+
+            while (a > 0)
+            {
+                son = a % 10;
+                a /= 10;
+
+                if (i % 2 == 0)
+                {
+                    part2 = part2 * 10 + son;
+                }
+                else
+                {
+                    part1 = part1 * 10 + son;
+                }
+                i++;
+            }
+
+            Console.WriteLine($"Part1:{part1}");
+            Console.WriteLine($"Part2:{part2}");
+
+        }
+        static void Evtapshiriq11()
+        {
+        /*
+         11) 8 reqemli ededin reqemlerini iki -iki qruplashdir.
+        Qruplarin cemini tap. Alinan cavabin axirina 99 artir.
+        Sonra cavabin ozunden onun 18% ni cix;
+         */
+        Label1:
+            Console.Write("a:");
+            string inputValue = Console.ReadLine();
+            int a;
+            if (int.TryParse(inputValue, out a) != true)
+            {
+                Console.WriteLine("eded dogru deyil");
+                goto Label1;
+            }
+            if (a < 10000000 || a >= 100000000)
+            {
+                Console.WriteLine("eded bu parcada olmalidir [10000000,99999999]!");
+                goto Label1;
+            }
+            int part1, part2, part3, part4;
+            double yekun;
+            part1=a% 100;
+            part2 = (a/100 )% 100;
+            part3 = (a / 10000) % 100;
+            part4 = (a / 1000000) % 100;
+            a= part1+ part2+ part3+ part4;
+            yekun = a * 100 + 99;
+            yekun = yekun - (yekun * 18 / 100);
+
+            Console.WriteLine(yekun);
+            
+
+        }
+        static void Evtapshiriq12()
+        {
+        /*
+         12) 2 dene 5 reqemli eded daxil et.
+    I ededin reqemleri ceminin usutne II ededin reqemleri hasilini gel.
+    Neticenin axirina I ededin en axiinci reqemini artir.
+         */
+        Label1:
+            Console.Write("a:");
+            string inputValue = Console.ReadLine();
+            int a;
+            if (int.TryParse(inputValue, out a) != true)
+            {
+                Console.WriteLine("eded dogru deyil");
+                goto Label1;
+            }
+            if (a < 10000000 || a >= 100000000)
+            {
+                Console.WriteLine("eded bu parcada olmalidir [10000000,99999999]!");
+                goto Label1;
+            }
+            int part1, part2, part3, part4;
+            double yekun;
+            part1 = a % 100;
+            part2 = (a / 100) % 100;
+            part3 = (a / 10000) % 100;
+            part4 = (a / 1000000) % 100;
+            a = part1 + part2 + part3 + part4;
+            yekun = a * 100 + 99;
+            yekun = yekun - (yekun * 18 / 100);
+
+            Console.WriteLine(yekun);
+
+
+        }
+        static void Evtapshiriq13()
+        {
+        /*
+         3 dene 5 reqemli eded var.
+    Her bir  ededin ilk ve son reqemlerininden 1 eded duzlet. Alinan neticeleri topla
+    Yekunda alian cavabin 50%-ni hemin ededin uzerine gel.
+         */
+        Label1:
+            Console.Write("a:");
+            string inputValue = Console.ReadLine();
+            int a;
+            if (int.TryParse(inputValue, out a) != true)
+            {
+                Console.WriteLine("eded dogru deyil");
+                goto Label1;
+            }
+            if (a < 10000000 || a >= 100000000)
+            {
+                Console.WriteLine("eded bu parcada olmalidir [10000000,99999999]!");
+                goto Label1;
+            }
+            
+
+           // Console.WriteLine(yekun);
+
 
         }
     }
