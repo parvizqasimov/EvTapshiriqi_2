@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Runtime.Serialization;
 
@@ -19,6 +20,8 @@ namespace ConsoleAppTapshiriq
             //Evtapshiriq9();
             //Evtapshiriqi10(); 
             //Evtapshiriq11();
+            // Evtapshiriq12();
+            Evtapshiriq13();
 
         }
         static void Evtapshiriq1()
@@ -405,24 +408,45 @@ namespace ConsoleAppTapshiriq
                 Console.WriteLine("eded dogru deyil");
                 goto Label1;
             }
-            if (a < 10000000 || a >= 100000000)
+            if (a < 10000 || a >= 100000)
             {
-                Console.WriteLine("eded bu parcada olmalidir [10000000,99999999]!");
+                Console.WriteLine("eded bu parcada olmalidir [10000,99999]!");
                 goto Label1;
             }
-            int part1, part2, part3, part4;
-            double yekun;
-            part1 = a % 100;
-            part2 = (a / 100) % 100;
-            part3 = (a / 10000) % 100;
-            part4 = (a / 1000000) % 100;
-            a = part1 + part2 + part3 + part4;
-            yekun = a * 100 + 99;
-            yekun = yekun - (yekun * 18 / 100);
+            int c = a;
+            int sumA = 0;
+            while (a > 0)
+            {
+                sumA = sumA + a % 10;
+                a = a / 10;
+            }
 
-            Console.WriteLine(yekun);
+        Label2:
+            Console.Write("b:");
+            string inputValueB = Console.ReadLine();
+            int b;
+            if (int.TryParse(inputValueB, out b) != true)
+            {
+                Console.WriteLine("eded dogru deyil");
+                goto Label2;
+            }
+            if (b < 10000 || b >= 100000)
+            {
+                Console.WriteLine("eded bu parcada olmalidir [10000,99999]!");
+                goto Label2;
+            }       
+            int sumB = 1;
+            while (b > 0)
+            {
+                sumB = sumB * (b % 10);
+                b = b / 10;
+            }
 
-
+            sumA =sumA+ sumB;
+            c=c%10;          
+            sumA = sumA + c;
+            Console.WriteLine(sumA);
+           
         }
         static void Evtapshiriq13()
         {
@@ -440,16 +464,89 @@ namespace ConsoleAppTapshiriq
                 Console.WriteLine("eded dogru deyil");
                 goto Label1;
             }
-            if (a < 10000000 || a >= 100000000)
+            if (a < 10000 || a >= 100000)
             {
-                Console.WriteLine("eded bu parcada olmalidir [10000000,99999999]!");
+                Console.WriteLine("eded bu parcada olmalidir [10000,99999]!");
                 goto Label1;
             }
+            int a1;
+            a1 = a % 10;
+            int sonA = 0, qaliq;
+            while (a > 0)
+            {
+                qaliq = a % 10;
+                sonA = sonA *10+qaliq;
+                a=a / 10;
+            }
+            sonA = sonA % 10;
+            sonA = sonA + a1;
+            
             
 
-           // Console.WriteLine(yekun);
+        Label2:
+            Console.Write("b:");
+            string inputValueB = Console.ReadLine();
+            int b;
+            if (int.TryParse(inputValueB, out b) != true)
+            {
+                Console.WriteLine("eded dogru deyil");
+                goto Label2;
+            }
+            if (b < 10000 || b >= 100000)
+            {
+                Console.WriteLine("eded bu parcada olmalidir [10000,99999]!");
+                goto Label2;
+            }
+            int b1;
+            b1 = b % 10;
+            int sonB = 0, qaliqB;
+            while (b > 0)
+            {
+                qaliqB = b % 10;
+                sonB = sonB * 10 + qaliqB;
+                b = b / 10;
+            }
+            sonB = sonB % 10;
+            sonB = sonB + b1;
+            
 
+        Label3:
+            Console.Write("c:");
+            string inputValueC = Console.ReadLine();
+            int c;
+            if (int.TryParse(inputValueC, out c) != true)
+            {
+                Console.WriteLine("eded dogru deyil");
+                goto Label3;
+            }
+            if (c < 10000 || c >= 100000)
+            {
+                Console.WriteLine("eded bu parcada olmalidir [10000,99999]!");
+                goto Label3;
+            }
+            int c1;
+            c1 = c % 10;
+            int sonc = 0, qaliqc;
+            while (c > 0)
+            {
+                qaliqc = c % 10;
+                sonc = sonc * 10 + qaliqc;
+                c = c / 10;
+            }
+            sonc = sonc % 10;
+            sonc = sonc + c1;
+            
+
+            int yekun = sonA + sonB + sonc;
+            yekun = yekun * 50 / 100;
+
+            Console.WriteLine(yekun);
 
         }
+
+        
+
+
+    
     }
 }
